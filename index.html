@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+  <form action="">
+    <h2>Contact Us</h2>
+    <div class="names">
+      <article>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name">
+        <p id="firstnameError" class="errors">This field is required</p>
+      </article>
+      <article class="last-name">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name">
+        <p id="lastnameError" class="errors">This field is required</p>
+      </article>
+    </div>
+    <article class="email-section">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="example@gmail.com">
+      <p id="emailError" class="errors"> Please enter a valid email address</p>
+    </article>
+    <div class="query">
+      <label>Query Type</label>
+      <article>
+        <div class="radio">
+          <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry">
+          <label for="general-enquiry">General Enquiry</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="support-request" name="query-type" value="Support Request">
+          <label for="support-request">Support Request</label></div>
+      </article>
+      <p id="radioError" class="errors" >This field is required</p>
+    </div>
+    <article class="message">
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+      <p id="text-error" class="errors">This field is required</p>
+    </article>
+    <div>
+      <article class="checkbox">
+        <input type="checkbox" id="consent">I consent to being contacted by the team
+    </article>
+    <p id="consentError" class="errors">To submit this form, please consent to being contacted</p>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Godspower</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

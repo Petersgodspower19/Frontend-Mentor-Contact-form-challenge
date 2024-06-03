@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+    min-height: 100%;
+}
+ form{
+    background-color: hsl(0, 0%, 100%);
+    margin: 4rem auto;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+ }
+ form article{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 1.5rem;
+ }
+ form label{
+    color: hsl(186, 15%, 59%);
+    cursor: pointer;
+    font-weight: 600;
+ }
+ form input{
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ form input.error{
+    border: 1px solid hsl(0, 66%, 54%);
+ }
+ form input:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+ }
+ form input:active{
+    border: 1px solid hsl(169, 82%, 27%);
+ }
+ form input[type="text"], form input[type="email"]{
+    height: 30px;
+    padding: 4px;
+    width: 100%;
+ }
+ h2{
+    color: hsl(187, 24%, 22%);
+    margin-bottom: 1rem;
+ }
+ .names{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+    
+ }
+ .errors{
+    color: hsl(0, 66%, 54%);
+    font-size: 12px;
+    display: none;
+ }
+ 
+ .query input{
+    display: flex;
+
+ }
+ textarea{
+    height: 50px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+ }
+ textarea.error{
+    border: 1px solid hsl(0, 66%, 54%);
+ }
+ textarea:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+ }
+ 
+ .checkbox{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    color: hsl(186, 15%, 59%);
+ }
+ input[type="checkbox"]{
+    accent-color: hsl(169, 82%, 27%);
+    color: white;
+    cursor: pointer;
+ }
+ input[type="submit"]{
+    padding: 4px;
+    height: 30px;
+    width: 100%;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+ }
+ #consentError, #radioError{
+    margin-top: -19px;
+    margin-bottom: 0.8rem;
+ }
+
+ input[type="radio"] {
+    accent-color: hsl(169, 82%, 27%);
+ }
+ 
+
+.radio{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+    padding: 5px;
+    border-radius: 4px;
+}
+.radio:hover{
+    background-color: hsl(148, 38%, 91%);
+    border: 1px solid hsl(169, 82%, 27%);
+}
+.query article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.attribution { font-size: 15px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); 
+    text-decoration: none}
+
+
+
+    @media(min-width:1000px) {
+        form{
+            margin: 7rem auto;
+        }
+    }
+
+
+    @media(max-width:480px) {
+     .names{
+        grid-template-columns: repeat(1, 1fr);
+     } 
+    .last-name{
+        margin-top: -15px;
+    }
+    .query article{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    textarea{
+        height: 100px;
+    }
+    }
